@@ -34,7 +34,7 @@ print "\n\n"
 counter = 1
 for fname in files:
 	data_find = str(counter) + '~' + fname +'~'+ str(pypdftk.get_num_pages(fname)) + '~' + humanize.naturalsize(os.path.getsize(fname)) + '~'  # giving file path with the name of the file
-	print data_find # test with printing the data
+	print(data_find) # test with printing the data
 	file_write.write(str(data_find)) 
 	file_write.write("\n")	
 	counter = counter + 1
